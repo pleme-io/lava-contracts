@@ -1,0 +1,24 @@
+[package]
+authors = ["pleme-io"]
+description = "Typed result contracts for lava architectures: NetworkResult / IamResult / ClusterResult / etc. Cross-architecture composition validates at compile time, not apply time. Pangea::Contracts::*Result analog."
+edition = "2024"
+license = "MIT"
+name = "lava-contracts"
+readme = "README.md"
+repository = "https://github.com/pleme-io/lava-contracts"
+version = "0.1.0"
+
+[lib]
+name = "lava_contracts"
+path = "src/lib.rs"
+
+[lints.clippy]
+pedantic = "warn"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+indexmap = { version = "2", features = ["serde"] }
+lava-core = { git = "https://github.com/pleme-io/lava-core", branch = "main" }
+
+[dev-dependencies]
+serde_json = "1"
