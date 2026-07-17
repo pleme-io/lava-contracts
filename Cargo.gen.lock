@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "cargo_lock_sha256": "ab0f57ffa50f4d0788a52bf3d20731d95abbf1644be40c62090f36b6aa4a8be4",
+  "cargo_lock_sha256": "017f0f79aa13dd2a8e50c11434239359b829c48f639c6952a1aa805fec75c264",
   "target_resolves": {
     "base": {
       "equivalent-1.0.2": {
@@ -58,7 +58,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "lava-contracts-0.1.2": {
+      "lava-contracts-0.1.4": {
         "runtime_dependencies": [
           {
             "name": "indexmap",
@@ -74,7 +74,7 @@
           },
           {
             "name": "lava_core",
-            "package_key": "lava-core-0.1.6",
+            "package_key": "lava-core-0.1.6-610f5231d47cfaddad053b4c351ce6ef663002df",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -98,7 +98,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "lava-core-0.1.6": {
+      "lava-core-0.1.6-610f5231d47cfaddad053b4c351ce6ef663002df": {
         "runtime_dependencies": [
           {
             "name": "indexmap",
@@ -158,7 +158,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "memchr-2.8.1": {
+      "memchr-2.8.3": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": [
@@ -185,14 +185,14 @@
           "proc-macro"
         ]
       },
-      "quote-1.0.45": {
+      "quote-1.0.46": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
             "package_key": "proc-macro2-1.0.106",
             "kind": "normal",
             "features": [],
-            "uses_default_features": true,
+            "uses_default_features": false,
             "optional": false,
             "target": null,
             "tree": "target"
@@ -256,15 +256,17 @@
             "name": "proc_macro2",
             "package_key": "proc-macro2-1.0.106",
             "kind": "normal",
-            "features": [],
-            "uses_default_features": true,
+            "features": [
+              "proc-macro"
+            ],
+            "uses_default_features": false,
             "optional": false,
             "target": null,
             "tree": "target"
           },
           {
             "name": "quote",
-            "package_key": "quote-1.0.45",
+            "package_key": "quote-1.0.46",
             "kind": "normal",
             "features": [
               "proc-macro"
@@ -276,7 +278,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-2.0.117",
+            "package_key": "syn-2.0.119",
             "kind": "normal",
             "features": [
               "clone-impls",
@@ -310,7 +312,7 @@
           },
           {
             "name": "memchr",
-            "package_key": "memchr-2.8.1",
+            "package_key": "memchr-2.8.3",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -330,7 +332,7 @@
           },
           {
             "name": "zmij",
-            "package_key": "zmij-1.0.21",
+            "package_key": "zmij-1.0.23",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -401,21 +403,21 @@
         "build_dependencies": [],
         "features": []
       },
-      "syn-2.0.117": {
+      "syn-2.0.119": {
         "runtime_dependencies": [
           {
             "name": "proc_macro2",
             "package_key": "proc-macro2-1.0.106",
             "kind": "normal",
             "features": [],
-            "uses_default_features": true,
+            "uses_default_features": false,
             "optional": false,
             "target": null,
             "tree": "target"
           },
           {
             "name": "quote",
-            "package_key": "quote-1.0.45",
+            "package_key": "quote-1.0.46",
             "kind": "normal",
             "features": [],
             "uses_default_features": false,
@@ -477,7 +479,7 @@
           },
           {
             "name": "quote",
-            "package_key": "quote-1.0.45",
+            "package_key": "quote-1.0.46",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -487,7 +489,7 @@
           },
           {
             "name": "syn",
-            "package_key": "syn-2.0.117",
+            "package_key": "syn-2.0.119",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -509,7 +511,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "zmij-1.0.21": {
+      "zmij-1.0.23": {
         "runtime_dependencies": [],
         "build_dependencies": [],
         "features": []
@@ -519,6 +521,12 @@
       "aarch64-apple-darwin": {
         "overrides": {}
       },
+      "aarch64-unknown-linux-gnu": {
+        "overrides": {}
+      },
+      "aarch64-unknown-linux-musl": {
+        "overrides": {}
+      },
       "x86_64-apple-darwin": {
         "overrides": {}
       },
@@ -526,12 +534,6 @@
         "overrides": {}
       },
       "x86_64-unknown-linux-musl": {
-        "overrides": {}
-      },
-      "aarch64-unknown-linux-gnu": {
-        "overrides": {}
-      },
-      "aarch64-unknown-linux-musl": {
         "overrides": {}
       }
     }
@@ -549,24 +551,24 @@
     "itoa-1.0.18": {
       "edition": "2021"
     },
-    "lava-contracts-0.1.2": {
+    "lava-contracts-0.1.4": {
       "edition": "2024",
       "lib_target": {
         "name": "lava_contracts",
         "path": "src/lib.rs"
       }
     },
-    "lava-core-0.1.6": {
+    "lava-core-0.1.6-610f5231d47cfaddad053b4c351ce6ef663002df": {
       "edition": "2024"
     },
-    "memchr-2.8.1": {
+    "memchr-2.8.3": {
       "edition": "2021"
     },
     "proc-macro2-1.0.106": {
       "edition": "2021",
       "build_script": "build.rs"
     },
-    "quote-1.0.45": {
+    "quote-1.0.46": {
       "edition": "2021",
       "build_script": "build.rs"
     },
@@ -592,7 +594,7 @@
     "serde_yaml-0.9.34+deprecated": {
       "edition": "2021"
     },
-    "syn-2.0.117": {
+    "syn-2.0.119": {
       "edition": "2021"
     },
     "thiserror-2.0.18": {
@@ -619,13 +621,13 @@
         }
       ]
     },
-    "zmij-1.0.21": {
+    "zmij-1.0.23": {
       "edition": "2021",
       "build_script": "build.rs"
     }
   },
   "git_nar_sha256": {
-    "lava-core-0.1.6": "sha256-jaTPA7QstAvhA3iRDx9U6PJMrPeythMd6KJJOl2KxNc="
+    "lava-core-0.1.6-610f5231d47cfaddad053b4c351ce6ef663002df": "sha256-IKxgJsK/Ht+aMY4SikIkZRNi6pMKMpMKA503Z8DYObg="
   },
   "flake_metadata": {}
 }
