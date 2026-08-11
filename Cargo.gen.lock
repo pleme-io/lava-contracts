@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "cargo_lock_sha256": "6987a1670b05437a754bfdb712bf5742162fb9ef6ce408df95481758878a9204",
+  "cargo_lock_sha256": "84d0233ad78b8054b25eb722165ccb5a5d07500f1554dcf91eba955d43280b4b",
   "manifest_sha256": {
     "Cargo.toml": "75b81dc5cb29d8cbb84dc577df7387e7482a7713081482ad92748de800c4872a"
   },
@@ -77,7 +77,7 @@
           },
           {
             "name": "lava_core",
-            "package_key": "lava-core-0.2.1",
+            "package_key": "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae",
             "kind": "normal",
             "features": [],
             "uses_default_features": true,
@@ -101,7 +101,7 @@
         "build_dependencies": [],
         "features": []
       },
-      "lava-core-0.2.1": {
+      "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae": {
         "runtime_dependencies": [
           {
             "name": "indexmap",
@@ -575,8 +575,12 @@
         "path": "src/lib.rs"
       }
     },
-    "lava-core-0.2.1": {
-      "edition": "2024"
+    "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae": {
+      "edition": "2024",
+      "lib_target": {
+        "name": "lava_core",
+        "path": "src/lib.rs"
+      }
     },
     "memchr-2.8.3": {
       "edition": "2021"
@@ -643,6 +647,8 @@
       "build_script": "build.rs"
     }
   },
-  "git_nar_sha256": {},
+  "git_nar_sha256": {
+    "lava-core-0.2.1-cfddce8aba34b5d7e6fd9e3616ea4ce48783beae": "sha256-BNRpvPO0r5cKusks0dK4bUfxmrrg0lTF6uw9WMdK6eI="
+  },
   "flake_metadata": {}
 }
